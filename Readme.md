@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Ksenia Laskutova](https://up.htmlacademy.ru/adaptive/22/user/1534135).
-* Наставник: `Неизвестно`.
+* Наставник:[Александр Григорьев](https://htmlacademy.ru/profile/fuckhtml).
 
 ---
 
