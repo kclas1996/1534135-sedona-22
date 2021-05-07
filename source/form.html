@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body class="page__body">
+
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="img/logotype-mobile.jpg" width="101.6" height="84" alt="Седона">
+      </a>
+
+      <nav class="page-header__nav">
+        <button class="page-header__nav-toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="page-header__list">
+          <li class="page-header__item">
+            <a class="page-header__link  page-header__link--active">Главная</a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="form.html">Форма отзывы</a>
+          </li>
+          <li class="page-header__item">
+            <a class="page-header__link" href="htmlacademy.html">HTML academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Седона - Онлайн-бронирование отелей для туристов</h1>
+
+      <section class="intro">
+        <h2 class="visually-hidden">Описание сайта</h2>
+
+        <a class="intro__logo">
+          <img src="img/back-desktop.jpg.jpg"
+            width="1200" height="518" alt="Вид Седоны">
+        </a>
+      </section>
+
+      <section class="form">
+        <h2 class="form__intro">Оставьте свой отзыв</h2>
+        <p>Помогите нашим отелям стать лучше! оставьте отзыв о них,
+            а также о посещенных вами достопримечательностях</p>
+      </section>
+
+      <div class="radio">
+        <span>Ваше общее впечатление:</span>
+        <label>
+          <input type="radio" name="impression" value="скорее положительное">скорее положительное
+          <div class="radio-control positive"></div>
+        </label>
+        <label>
+          <input type="radio" name="impression" value="Скорее отрицательное">Скорее отрицательное
+          <div class="radio-control negative"></div>
+        </label>
+        <label>
+            <input type="radio" name="impression" value="Затрудняюсь ответить">Затрудняюсь ответить
+            <div class="radio-control unsure"></div>
+          </label>
+      </div>
+     
+        <fieldset class="introduction">
+            <legend>Представьтесь</legend>
+            <label>Имя*:<input type="name" required placeholder="Петр"></label>
+            <label>Фамилия*:<input type="lastname" required placeholder="Иванов"></label>
+            <label>Отчество<input type="secondlastname" required placeholder="Александрович"></label>
+        </fieldset>
+
+        <fieldset class="Contact">
+            <legend>Контактная информация:</legend>
+            <label>Телефон*:<input type="name" required placeholder="Введите телефон"></label>
+            <label>Электронная почта*:<input type="email" required placeholder="Введите e-mail"></label>
+        </fieldset>
+      
+        <p class="places">Посещенные достопримечательности:</p>
+        <div>
+            <input type="checkbox" id="Мост дьявола" name="Мост дьявола"
+                   checked>
+            <label for="Мост дьявола">Мост дьявола</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Гора-колокол" name="Гора-колокол"
+                   checked>
+            <label for="Гора-колокол">Гора-колокол/label>
+          </div>
+          <div>
+            <input type="checkbox" id="Слайд-парк" name="Слайд-парк"
+                   checked>
+            <label for="Слайд-парк">Слайд-парк</label>
+          </div>
+          <div>
+            <input type="checkbox" id="Красные скалы" name="Красные скалы">
+            <label for="Красные скалы">Красные скалы</label>
+          </div>
+
+          <label for="comment"></label>
+          <textarea rows="10" name="comment" id="comment"></textarea>
+          </p>
+
+          <p class="submit">
+            <input type="submit" value="Отправить отзыв" />
+            </p>
+    </main>
+
+<footer class="page-footer">
+    <div class="page-footer__#">
+      <p class="search_name">#visitsedona</p>
+    </div>
+    <div class="page-footer__social">
+     <ul class="social__list">
+       <li class="social__item">
+         <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy"></a>
+         <li class="social__item">
+           <a class="social__link social__link--facebook" href="https://facebook.com/htmlacademy"></a>
+           <li class="social__item">
+             <a class="social__link social__link--youTube" href="https://youTube.com/htmlacademy"></a>
+   </div>
+   <div class="page-footer__copyright copyright">
+     <b class="copyright__text">Разработано</b>
+     <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+       <img src="img/htmlacademy.png"
+         width="26.9" height="34.1" alt="значок HTML academy">
+     </a>
+   </div>
+  </footer>
+
+ </body>
+
+</html>
