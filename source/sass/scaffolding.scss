@@ -18,3 +18,8 @@ a {
     outline: none;
   }
 }
+
+
+*[class]:focus {
+  outline: 10px dotted #766357;
+}
