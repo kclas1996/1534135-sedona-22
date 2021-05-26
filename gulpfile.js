@@ -62,6 +62,11 @@ const sprite = () => {
     .pipe(gulp.dest("source/img"))
 }
 
+const html = () => {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"))
+}
+
 const serve = (done) => {
   sync.init({
     server: {
@@ -73,7 +78,7 @@ const serve = (done) => {
   });
 
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html").on("change", gulp.series(html, sync.reload));
 
   done();
 }
@@ -85,6 +90,6 @@ const build = gulp.series(
   towebp
 );
 
-exports.build = build;  
+exports.build = build;
 exports.serve = serve;
 exports.default = gulp.series(build, serve);

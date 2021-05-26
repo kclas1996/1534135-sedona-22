@@ -62,12 +62,29 @@
     padding-bottom: 16px;
     padding-right: 20px;
     background-color: $lightgrey;
+
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      "title likes"
+      "author likes";
+  }
+
+  .picture-card__title {
+    grid-area: title;
+  }
+
+  .picture-card__author {
+    grid-area: author;
   }
 
   .picture-card__likes {
-    position: absolute;
-    right: 4px;
-    bottom: 11px;
+    grid-area: likes;
+
+    justify-content: flex-end;
+    width: 100%;
+    margin: 0;
   }
 
   .picture-card__likes-number {

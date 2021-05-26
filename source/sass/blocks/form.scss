@@ -157,18 +157,28 @@
   background-color: $lightgrey;
   border-radius: 50%;
   margin-right: 22px;
+}
 
-  &:hover {
+.form__fieldset--type-3 label {
+  &:hover::before {
     background-color: $softgrey;
   }
 
-  &:focus {
+  &:focus::before {
     background-color: $softgrey;
   }
 
-  &:active {
+  &:active::before {
     background-color: $onemoregrey;
   }
+}
+
+.form__fieldset--type-3 input:disabled + label::before {
+  box-sizing: border-box;
+
+  border: 18px solid #D5D5D5;
+
+  background-color: #A4A4A4;
 }
 
 input[type="radio"]:checked + label::before {
@@ -177,6 +187,20 @@ input[type="radio"]:checked + label::before {
   height: 20px;
   background-color: $black;
   border: 18px solid $lightgrey;
+}
+
+.form__fieldset--type-4 label  {
+  &:hover::before {
+    background-color: $softgrey;
+  }
+
+  &:focus::before {
+    background-color: $softgrey;
+  }
+
+  &:active::before {
+    background-color: $onemoregrey;
+  }
 }
 
 .form__fieldset--type-4 label::before {
@@ -264,7 +288,7 @@ input[type="checkbox"]:checked + label::before {
 
   .form__fieldset--type-1 legend,
   .form__fieldset--type-3 legend {
-    text-align: left;
+    text-align: center;
   }
 
   .form__fieldset--type-1 {
